@@ -1,0 +1,115 @@
+/* styles.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image:url("https://www.enjpg.com/img/2020/black-and-gold-23-500x890.jpg");
+       margin: 0;
+}
+
+header, footer {
+}
+
+.container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%; 
+    margin: 20px auto;
+    padding: 30px;
+    text-align: center;
+    position: relative; 
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%; 
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #ff7e5f;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 126, 95, 0.3);
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    color: #ccc;
+    cursor: pointer;
+    width: 100%;
+}
+
+.rating span:hover,
+.rating span:hover ~ span,
+.rating span.selected {
+    color: #ff7e5f;
+}
+
+button {
+    background-color: #ff6347;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ff4500;
+    transform: translateY(-3px);
+}
+
+#responseMessage {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: green;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+}

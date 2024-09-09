@@ -1,0 +1,56 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info-card {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+/*
+.info-card:hover {
+    transform: scale(1.05);
+}
+
+
+.info-content {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+*/
+
+  .info-card:hover .info-content {
+    opacity: 1;
+  }
+
+
+.info-content p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.info-content strong {
+    color: #333;
+}
